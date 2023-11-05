@@ -1,0 +1,489 @@
+*{
+    font-family: "Cambria", "Helvetica", sans-serif;
+  }
+  body{
+    min-height: 100vh;
+    margin: 0;
+    /* background-color: bisque; */
+    /* display: flex; */
+    /* justify-content: center; */
+  }
+  
+  /* HEADER */
+  header{
+    background-image: url("./style/library3.jpg");
+    /* opacity: 0.8; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: stretch; */
+  }
+  #headerupper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: large;
+  }
+  #headerupper img{
+    height: 2rem;
+    padding: .5rem;
+    margin: 1rem 1.5rem 1rem 1rem;
+    background-color: rgb(201, 77, 55);
+    border: solid white;
+    border-radius: 15px;
+    cursor: pointer;
+  }
+  #headerupper img:hover{
+    background-color: rgb(255, 255, 255);
+  }
+  #headerupper img:active{
+    background-color: rgb(255, 187, 0);
+  }
+  header h1{
+    color: white;
+    text-align: left;
+    padding-left: 3rem;
+  }
+  #menu{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 1.5rem;
+  }
+  .seccion{
+    font-size: .9rem;
+    background-color: rgb(150, 30, 9);
+    color: white;
+    padding: .6rem .7rem;
+    margin: 0 .6rem;
+    border: solid .6px white;
+    border-radius: 15px;
+    text-align: center;
+    text-decoration: none; /*quitar subrayado*/
+  }
+  .seccionblack{
+    font-size: .9rem;
+    background-color: black;
+    color: white;
+    padding: .6rem 1.2rem;
+    margin: 0 4rem;
+    border: solid .6px white;
+    border-radius: 15px;
+    text-align: center;
+    text-decoration: none; /*quitar subrayado*/
+  }
+  .seccion:hover{
+    background-color: rgb(216, 6, 6);
+  }
+  .seccionblack:hover{
+    background-color: rgb(117, 79, 79);
+  }
+  .seccion:active, .seccionblack:active{
+    background-color: rgb(255, 187, 0);
+  }
+  
+  
+  /* MAIN */
+  main{
+    display: flex;
+    min-height: 66.3vh;
+  }
+  #mainleft{
+    background-color: rgb(224, 56, 56);
+    width: 15%;
+  }
+  #mainleft ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 1.2rem;
+  }
+  .opciones{
+    padding: .5rem;
+  }
+  .opciones a{
+    color: white;
+    text-decoration: none; /*quitar subrayado*/
+  }
+  .opciones:hover{
+    background-color: rgb(216, 6, 6);
+  }
+  .opciones:active{
+    background-color: rgb(255, 187, 0);
+  }
+  #mainright{
+    /* background-color: rgb(207, 159, 159); */
+    background: linear-gradient(rgba(255,255,255,.5), rgba(255,255,255,.5)), url("./style/oldpaper3.jpg");
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    /* align-items: center; */
+    padding: 2rem 1rem 3rem 1rem;
+    width: 85%;
+  }
+  #mainright h1{
+    font-size: 1.4rem;
+    text-align: center;
+    margin: 0 0 1rem 0;
+  }
+  #mainright h2{
+    font-size: 1.2rem;
+    color: rgb(119, 23, 6);
+    padding-left: 4rem; 
+  }
+  #mainright h3{
+    font-size: 1.2rem;
+    color: rgb(119, 23, 6);
+    /* padding-left: 5rem; */
+    margin: 0 1rem;
+  }
+  .dispmodelib{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 2rem;
+  }
+  .dispmodelib button{
+    font-size: 1rem;
+    padding: .5rem;
+    border: none;
+    /* background: none; */
+    background-color: rgb(216, 184, 179);
+    font-weight: bold;
+  }
+  .dispmodelib button:hover{
+    background-color: rgb(150, 30, 9);
+    color: white;
+  }
+  .dispmodelib button:active{
+    background-color: rgb(255, 187, 0);
+  }
+  .dispXenX{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: -.8rem;
+  }
+  .butsdispXenX{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+  }
+  .butsdispXenX button{
+    margin: 0 1rem;
+    padding: 0;
+    /* text-decoration: none; */
+    /* border: 0; */
+  }
+  .butsdispXenX img{
+    width: 3rem;
+  }
+  .butsdispXenX input{
+    width: 2rem;
+    height: 1.5rem;
+    text-align: center;
+  }
+  .dispXenX2{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .bookbox{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 20%;
+    margin-bottom: 2rem;
+  }
+  .bookbox img{
+    height: 30vh;
+    margin-bottom: 1rem;
+    transition: transform .2s; /* Animation */
+  }
+  .bookbox img:hover{
+    transform: scale(1.5);
+  }
+  .bookbox p{
+    margin: .3rem;
+    text-align: center;
+  }
+  /* .overlay{
+    background-color: rgba(40,50,60,.9);
+    padding: .5rem;
+    opacity: 1;
+    color: white;
+    position: relative;
+    bottom: 150px;
+    left: 50%;
+    color: white;
+    transform: translate(-50%,-90%);
+    -ms-transform: translate(-50%,-90%);
+  } */
+  /* .bookdetails{
+    position: relative;
+    transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    bottom: 20px;
+  } */
+  /* .overlay p{
+    
+  } */
+  .clm{
+    margin-bottom: 0;
+    padding-left: 1rem;
+  }
+  .clinputs{
+    padding-top: 1rem;
+    padding-left: 6rem;
+  }
+  .clinputs button{
+    font-size: 1rem;
+  }
+  .clinputs select{
+    font-size: .9rem;
+  }
+  #usuarios{
+    text-align: center;
+  }
+  table{
+    border: 1px solid #dddddd; 
+    /* text-align: left; */
+    margin-left: auto;
+    margin-right: auto;
+  }
+  thead tr{
+    background-color: rgb(119, 23, 6);
+    color: white;
+  }
+  tbody tr:nth-child(odd) {
+    background-color: rgb(216, 164, 143);;
+  }
+  th, td{
+    padding: 5px;
+    /* padding-right: .5rem; */
+  }
+  #tablib{
+    width: 80%; 
+    border: 1px solid #dddddd; 
+    text-align: left; 
+    font-size: 1rem;
+    table-layout: auto;
+  }
+  .colwidfix{
+    width: 25%;
+  }
+  /* .botonBorrarLibroBin{
+    padding: 0;
+  border: none;
+  } */
+  .bin{
+    height: 1.5rem;
+  }
+  /* .botonBorrarLibroBin:hover{
+    background: white;
+  } */
+  #tabbib{
+    width: 75%; 
+    border: 1px solid #dddddd; 
+    text-align: left; 
+    font-size: 1rem
+  }
+  #tabcatlib, #tabpres{
+    width: 90%; 
+    border: 1px solid #dddddd; 
+    text-align: left; 
+    font-size: 1rem
+  }
+  #tabus{
+    width: 60%; 
+    border: 1px solid #dddddd; 
+    text-align: left; 
+    font-size: 1rem
+  }
+  .disponib{
+    font-weight: bold;
+  }
+  #maillogo{
+    height: 1.5rem;
+  }
+  
+  
+  /* FOOTER */
+  footer{
+    padding: 1rem 1rem 1rem 2rem;
+    background-color: rgb(226, 127, 110);
+  }
+  footer .plaintext{
+    font-size: .9rem;
+    color: white;
+    margin: 0;
+  }
+  footer .plaintextred{
+    color: rgb(119, 23, 6);
+  }
+  
+  #bodyLogin{
+    min-height: 100vh;
+    margin: 0;
+    background-image: url("./style/library5.jpg");
+    /* -webkit-background-size: cover; */
+    /* -moz-background-size: cover; */
+    /* -o-background-size: cover; */
+    background-size: 102%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  #idUpper{
+    display: flex;
+    margin-top: 3rem;
+    /* justify-content: right; */
+    /* height: 10rem; */
+  }
+  #idUpper button{
+    font-size: 1rem;
+    background-color: rgb(150, 30, 9);
+    color: white;
+    font-style: italic;
+    padding: .6rem .7rem;
+    margin: 0 .8rem;
+    border: solid white;
+    border-radius: 15px;
+    text-align: center;
+  }
+  #idUpper button:hover{
+    background-color: rgb(216, 6, 6);
+  }
+  #idUpper button:active{
+    background-color: rgb(255, 187, 0);
+  }
+  /* #titlecontainer{ */
+    /* position: relative; */
+    /* text-align: center;
+    color: white;
+  } */
+  #bodyLogin h1{
+    font-size: 1.6rem;
+    color: white;
+    text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+    font-style: italic;
+    text-align: center;
+    margin-top: 2rem;
+    /* margin-bottom: 1.5rem; */
+  }
+  #bodyLogin h2{
+    font-size: 1.4rem;
+    color: rgb(233, 233, 233);
+    text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+    font-style: italic;
+    text-align: center;
+    margin-top: 0;
+  }
+  #bodyLogin h3{
+    margin-top: 0;
+  }
+  .idInner{ /* The Modal (background) */
+    background-color: rgba(150, 30, 9, 0.404);
+    color: white;
+    margin-top: 14rem;
+    padding: 1rem 1.5rem;
+    /* margin: 0 25rem; */
+    width: 20%;
+    border: solid .1rem white;
+    border-radius: 20px;
+    -webkit-animation: animatezoom 0.6s; /* Add Zoom Animation */
+    animation: animatezoom 0.6s;
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    overflow: auto; /* Enable scroll if needed */
+  }
+  @-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)} 
+    to {-webkit-transform: scale(1)}
+  }
+  @keyframes animatezoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+  }
+  .idInner .imgcontainer{
+    /* margin-top: 0; */
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: .5rem;
+    /* text-align: right; */
+  }
+  .close{ /* The Close Button (x) */
+    font-size: 1.6rem;
+    font-weight: bold;
+  }
+  .close:hover,
+  .close:focus {
+  color: red;
+  cursor: pointer;
+  }
+  .idInner h2{
+    font-size: 1.1rem;
+    font-style: italic;
+    color: black;
+    text-align: center;
+    margin: 0;
+  }
+  .logininputs{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+  }
+  .logininputs input, .logininputs button{
+    height: 2rem;
+    margin: .5rem 0;
+    font-size: 1rem;
+  }
+  .logininputs button{
+    background-color:rgb(248, 51, 16);
+    color: white;
+  }
+  
+  /* //////////////////////////////////////////////////////////////////// */
+  /* //////////////////////////////////////////////////////////////////// */
+  
+  .App {
+    text-align: center;
+  }
+  
+  .App-logo {
+    height: 40vmin;
+    pointer-events: none;
+  }
+  
+  @media (prefers-reduced-motion: no-preference) {
+    .App-logo {
+      animation: App-logo-spin infinite 20s linear;
+    }
+  }
+  
+  .App-header {
+    background-color: #282c34;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+  }
+  
+  .App-link {
+    color: #61dafb;
+  }
+  
+  @keyframes App-logo-spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
